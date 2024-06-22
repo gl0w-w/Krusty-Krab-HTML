@@ -1,0 +1,200 @@
+* {
+  -ms-overflow-style: none; /* Hide scrollbar IE and Edge */
+  scrollbar-width: none; /* Hide scrollbar Firefox */
+}
+
+*::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Chrome, Safari and Opera */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+.navbar-nav {
+  margin-left: 120px;
+}
+.text-white {
+  text-decoration: none;
+}
+
+.navbar-brand img {
+  position: absolute;
+  z-index: 1;
+  top: 1vh;
+  left: 1vh;
+  height: 15vh;
+}
+
+/* Aqui estan las modificaciones de los 3 botones que hay, estos ubicados en 'Miranos en vivo', 'Secreto' y 'La compra'. */
+.atras1 {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 16px 16px;
+  background-color: #000000d3;
+  color: white;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.atras1:hover {
+  background-color: #c7bbbb;
+  color: black;
+  transition: 2s;
+}
+
+/* Estilos para el icono del carrito de compras */
+.icon-cart {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 2vh;
+  left: 194vh;
+  stroke: #e2e2e2;
+}
+
+.icon-user {
+  width: 140px;
+  height: 140px;
+  position: absolute;
+  top: 40vh;
+  left: 18vh;
+}
+
+/*Este es el apartado del login*/
+
+.glass {
+  background: linear-gradient(
+    135deg,
+    rgba(141, 141, 141, 0.432),
+    rgba(165, 165, 165, 0)
+  );
+  backdrop-filter: blur(25px);
+  border-radius: 20px;
+  border: 1px solid rgba(177, 177, 177, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+form {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.input-style {
+  background: linear-gradient(
+    135deg,
+    rgba(141, 141, 141, 0.432),
+    rgba(165, 165, 165, 0)
+  );
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+#carta {
+  background: linear-gradient(
+    135deg,
+    rgba(141, 141, 141, 0.432),
+    rgba(165, 165, 165, 0)
+  );
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+.option-style {
+  background-color: white;
+  background: transparent; /* Elegir si el fondo es transparente */
+  border: none; /* Elimina cualquier borde */
+  color: black; /* Cambia el color del texto si es necesario */
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #0dcfbf;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+textarea {
+  width: 100%;
+  height: 200px;
+  margin-top: 20px;
+}
+/* Acá es para poder configurar el carousel */
+
+.sponge {
+  width: 100%;
+  height: 60%;
+}
+
+/* acá esta el apartado de la reseña */
+
+.container {
+  width: 50%;
+  margin: 100px auto; /* Mayor margen superior e inferior */
+  text-align: center; /* Centrar el contenido */
+  color: whitesmoke;
+}
+
+.container h2 {
+  margin-bottom: 20px; /* Espacio adicional debajo del título */
+}
+
+.form-label {
+  font-weight: bold;
+}
+
+#reviewsSection {
+  margin-top: 50px; /* Espacio adicional entre el formulario y la sección de reseñas */
+  padding: 20px; /* Añadir relleno */
+  text-align: center; /* Centrar el título de reseñas */
+  color: whitesmoke;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
